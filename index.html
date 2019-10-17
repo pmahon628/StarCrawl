@@ -8,6 +8,56 @@
 </head>
 <style>
     
+    body  {
+        background: url('./img/Space.jpg');
+        background-size: cover;
+        overflow: hidden;
+        color: yellow;
+
+ }
+
+.crawl {
+    font-family: arial, sans-serif;
+    text-align: justify;
+    margin: 0, auto;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 80px;
+    width: 1000px;
+    height: 1000px;
+    transform: perspective(250px)rotateX(20deg);
+    animation: scrollCrawl 90s linear;
+}
+
+
+
+.preheader{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.header {
+    text-align: center;
+    margin: 0 0 100px 0;
+
+}
+
+@keyframes scrollCraw {
+    0%{
+       transform: perspective(250px) rotateX(20deg) translateY(680px);     
+    }
+
+    50%{
+      
+    }
+
+    100%{
+        transform: perspective(250px) rotateX(20deg) translateY(-4000px);
+    }
+
+}
+
+
 </style>
 
 <body>
