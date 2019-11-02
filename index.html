@@ -8,11 +8,11 @@
 </head>
 <style>
     
-    body  {
-        background: url('./img/Space.jpg');
-        background-size: cover;
-        overflow: hidden;
-        color: yellow;
+ body  {
+     background: url('./img/download.jpg');
+     background-size: contain;
+     overflow: hidden;
+     color: yellow;
 
  }
 
@@ -23,8 +23,8 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 80px;
-    width: 500px;
-    height: 600px;
+    width: 1000px;
+    height: 1000px;
     transform: perspective(250px)rotateX(20deg);
     animation: scrollCrawl 120s linear;
 }
@@ -42,6 +42,11 @@
 
 }
 
+@media screen and (max-width: 700px) {
+img {width: 200px}
+}
+
+
 @keyframes scrollCrawl {
     0%{
        transform: perspective(250px) rotateX(20deg) translateY(680px); 
@@ -54,7 +59,7 @@
 
     100%{
         transform: perspective(250px) rotateX(20deg) translateY(-4000px);
-        opacity: 0;
+        opacity: 1;
     }
 
 }
