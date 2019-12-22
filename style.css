@@ -1,0 +1,54 @@
+body  {
+    background: url('./img/download.jpg') no-repeat center center fixed;
+    color: yellow; 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+
+ }
+
+.crawl {
+    font-family: arial, sans-serif;
+    text-align: center;
+    margin: 0, auto;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 80px;
+    width: 1000px;
+    height: 1000px;
+    transform: perspective(250px)rotateX(20deg);
+    animation: scrollCrawl 120s linear;
+}
+
+.preheader{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.header {
+    text-align: center;
+    margin: 0 0 100px 0;
+
+}
+
+.title{
+    font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes scrollCrawl {
+    0%{
+       transform: perspective(250px) rotateX(20deg) translateY(680px); 
+       opacity: 1;    
+    }
+
+    50%{
+      opacity: 1;
+    }
+
+    100%{
+        transform: perspective(250px) rotateX(20deg) translateY(-4000px);
+        opacity: 1;
+    }
+}
