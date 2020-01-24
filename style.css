@@ -1,5 +1,5 @@
 body  {
-    background: url('./img/Space.jpg') no-repeat center center fixed;
+    background: url('./img/test.jpg') no-repeat center center fixed;
     color: yellow; 
     /* -webkit-background-size: cover; */
   /* -moz-background-size: cover; */
@@ -11,6 +11,7 @@ body  {
 
 .crawl {
     font-family: arial, sans-serif;
+    justify-content: center;
     text-align: center;
     margin: 0, auto;
     font-weight: 400;
@@ -30,6 +31,8 @@ body  {
 .header {
     text-align: center;
     margin: 0 0 100px 0;
+    font-family: 'Orbitron', sans-serif;
+
 
 }
 
